@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/newsdb
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+  liquibase:
+    change-log: liquibase/changelog-master.yml
+
+telegram:
+  bot:
+    token: 8493956664:AAFbljP955hqfsLAo5JU1dMW7XJGSBv0IX0
+  chat:
+    id: -2111347345
+
+logging:
+  level:
+    root: INFO
+
+
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+
+
+

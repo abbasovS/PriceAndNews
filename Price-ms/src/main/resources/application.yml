@@ -1,0 +1,12 @@
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+
+telegram:
+  bot:
+    token: 8493956664:AAFbljP955hqfsLAo5JU1dMW7XJGSBv0IX0
+    chat-id: 2111347345
+

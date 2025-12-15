@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-news-table
+      author: senan
+      changes:
+        - createTable:
+            tableName: news
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: VARCHAR(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: content
+                  type: VARCHAR(4000)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: source
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: url
+                  type: VARCHAR(1000)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: sentiment
+                  type: DOUBLE PRECISION
+                  constraints:
